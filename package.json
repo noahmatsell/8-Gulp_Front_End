@@ -1,0 +1,31 @@
+{
+  "name": "8-gulp_front_end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahmatsell/8-Gulp_Front_End.git"
+  },
+  "author": "Noah Matsell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noahmatsell/8-Gulp_Front_End/issues"
+  },
+  "homepage": "https://github.com/noahmatsell/8-Gulp_Front_End#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
