@@ -12,7 +12,6 @@ const gulp = require('gulp'),
  webserver = require('gulp-webserver'),
   sequence = require('run-sequence');
  
-
 const options = {
   src : "src/",
   dist: "dist"
@@ -83,12 +82,8 @@ gulp.task('clean', function() {
 /*-----------------
   Build task
 -----------------*/
-// gulp.task('buildTasks', ['scripts', 'styles', 'images'], function(){
-//   return;
-// });
-
 gulp.task("build", ['clean'], function() {
-  return sequence('scripts', 'styles', 'images', 'webserver');
+  return sequence('images', 'scripts', 'styles', 'webserver');
 });
 
 /*-----------------
@@ -103,8 +98,15 @@ gulp.task('webserver', function() {
 });
 
 /*-----------------
+  Watch Styles task
+-----------------*/
+gulp.task('watchStyles', function(){
+  return gulp.watch(options.src + "sass/**", ["styles"]);
+});
+
+/*-----------------
   Default task
 -----------------*/
 gulp.task('default', ['build'], function(){
-  gulp.watch(options.src + "sass/**", ["styles"]);
+  sequence('watchStyles');
 });
