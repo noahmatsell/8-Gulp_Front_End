@@ -1,8 +1,8 @@
 {
   "name": "8-gulp_front_end",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "description": "Using Gulp to Build a Front End Website.",
+  "main": "dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
